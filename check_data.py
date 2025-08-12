@@ -1,0 +1,13 @@
+import pandas as pd
+df = pd.read_csv("uci_credit_default.csv")
+print("Shape:", df.shape)
+print("\nFirst 5 rows:")
+print(df.head())
+print("\nColumns:")
+print(df.columns)
+print("\nData types:")
+print(df.dtypes)
+print("\nMissing values per column:")
+print(df.isnull().sum())
+print("\nBasic Statistics:")
+print(df.describe())
